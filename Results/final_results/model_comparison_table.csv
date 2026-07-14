@@ -1,0 +1,4 @@
+Model,IoU,Dice,Precision,Recall,F1,Accuracy,Boundary_F1
+Model A (Baseline U-Net),0.902,0.931,0.9701,0.9577,0.9638,0.9762,0.7271
+Model B (Attention U-Net),0.9116,0.941,0.9588,0.9645,0.9617,0.9745,0.7265
+Model C (Proposed),0.9157,0.9457,0.9575,0.9615,0.9595,0.9731,0.7189

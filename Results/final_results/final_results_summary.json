@@ -1,0 +1,62 @@
+{
+  "models_evaluated": [
+    "Model A (Baseline U-Net)",
+    "Model B (Attention U-Net)",
+    "Model C (Proposed)"
+  ],
+  "test_set_size": 254,
+  "summary_metrics": {
+    "Model A (Baseline U-Net)": {
+      "IoU": 0.902045302287577,
+      "Dice": 0.9309723692057236,
+      "Precision": 0.9700912244242801,
+      "Recall": 0.9576571776743483,
+      "F1": 0.9638341010242251,
+      "Accuracy": 0.9761898010734498,
+      "Boundary_F1": 0.727073934652468
+    },
+    "Model B (Attention U-Net)": {
+      "IoU": 0.9116051521815007,
+      "Dice": 0.9409629226216932,
+      "Precision": 0.9588399419801552,
+      "Recall": 0.964548159560277,
+      "F1": 0.9616855803663709,
+      "Accuracy": 0.9745370309183917,
+      "Boundary_F1": 0.726522716220482
+    },
+    "Model C (Proposed)": {
+      "IoU": 0.9156522670302014,
+      "Dice": 0.945732350711899,
+      "Precision": 0.9575426356585648,
+      "Recall": 0.9615311195741049,
+      "F1": 0.9595327329074873,
+      "Accuracy": 0.9731302636814868,
+      "Boundary_F1": 0.7188708079101146
+    }
+  },
+  "ablation_deltas": {
+    "Model A (Baseline U-Net) -> Model B (Attention U-Net)": {
+      "IoU": 0.0096,
+      "Dice": 0.01,
+      "Precision": -0.0113,
+      "Recall": 0.0068,
+      "F1": -0.0021,
+      "Accuracy": -0.0017,
+      "Boundary_F1": -0.0006
+    },
+    "Model B (Attention U-Net) -> Model C (Proposed)": {
+      "IoU": 0.0041,
+      "Dice": 0.0047,
+      "Precision": -0.0013,
+      "Recall": -0.003,
+      "F1": -0.0022,
+      "Accuracy": -0.0014,
+      "Boundary_F1": -0.0076
+    }
+  },
+  "checkpoint_paths": {
+    "Model A (Baseline U-Net)": "/content/drive/MyDrive/oil_spill_project_outputs/checkpoints/model_a_unet_efficientnetb4_best.pth",
+    "Model B (Attention U-Net)": "/content/drive/MyDrive/oil_spill_project_outputs/checkpoints/model_b_attention_unet_efficientnetb4_best.pth",
+    "Model C (Proposed)": "/content/drive/MyDrive/oil_spill_project_outputs/checkpoints/model_c_attention_unet_boundary_focal_ema_best.pth"
+  }
+}
