@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+
+# Python virtual environments
+venv/
+env/
+
+# Google Colab
+content/
+
+# Model checkpoints (optional)
+*.pth
