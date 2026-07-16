@@ -108,15 +108,6 @@ Oil-Spill-Segmentation/
 
 ---
 
-## Future Work
-
-- Multi-class marine pollution segmentation
-- Transformer-based segmentation models
-- Lightweight architectures for real-time UAV deployment
-- Domain adaptation across different marine environments
-
----
-
 ## Authors
 
 **Pranya Wadhwa**
